@@ -1,37 +1,17 @@
-# dimens_sw
-
-#### 介绍
-android dimension fit！
-
-#### 软件架构
-软件架构说明
+- android ui适配，基于smallestWidth的适配方案
 
 
-#### 安装教程
+> Tips:大部分手机的宽度dp值集中在320-450之间，大部分1080P的手机应该都是360dp，390dp,411dp。可以在这个基础上，参考Android studio中的Virtual Device Configuration
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+![](https://github.com/ladingwu/dimens_sw/blob/master/tips.jpg)
 
 
-#### 码云特技
+## 使用说明
+- clone该项目到本地,以Android项目打开。
+- DimenTypes文件中写入你希望适配的sw尺寸，默认的这些尺寸能够覆盖几乎所有手机适配需求
+- DimenGenerator文件中填写设计稿的尺寸(DESIGN_WIDTH是设计稿宽度，DESIGN_HEIGHT是设计稿高度)
+- 执行lib module中的DimenGenerator.main()方法，当前地址下会生成相应的适配文件,把相应的文件连带文件夹拷贝到正在开发的项目中
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## 希望用真机测试的，可运行app项目看效果(效果如下图)
+
+![](https://github.com/ladingwu/dimens_sw/blob/master/test.png)
